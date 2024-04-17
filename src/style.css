@@ -34,9 +34,38 @@ header {
   margin: 2px;
 }
 
+main {
+  padding: 15px;
+}
+
 .weather-app-data {
   display: flex;
   justify-content: space-between;
+}
+
+.weather-app-icon {
+  font-size: 80px;
+}
+
+.weather-app-description {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.weather-app-city {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.weather-app-temperature {
+  font-size: 6em;
+  font-weight: 800;
+}
+
+.weather-app-unit {
+  font-size: 2.5em;
+  position: absolute;
+  padding: 15px 0 0 0;
 }
 
 footer {
