@@ -27,6 +27,10 @@ function displayTemp(response) {
     minute = `0${minute}`;
   }
 
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+
   temperatureElement.innerHTML = Math.round(temperature);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;

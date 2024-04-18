@@ -63,13 +63,21 @@ main {
 }
 
 #weather-app-icon {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
-.weather-app-description {
-  font-size: 2.5em;
-  font-weight: 500;
+#weather-app-humidity {
+  font-weight: 700;
+}
+
+#weather-app-wind-speed {
+  font-weight: 700;
+}
+
+#weather-app-description {
+  font-size: 2em;
+  margin: 0 0 30px;
 }
 
 .weather-app-city {
