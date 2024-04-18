@@ -7,6 +7,7 @@ function displayTemp(response) {
   let windSpeedElement = document.querySelector("#weather-app-wind-speed");
   let timeElement = document.querySelector("#weather-app-time");
   let date = new Date();
+  let iconElement = document.querySelector(".icon");
 
   let days = [
     "Sunday",
@@ -22,9 +23,9 @@ function displayTemp(response) {
   let minute = date.getMinutes();
   let currentDay = days[date.getDay()];
 
-    if (minute < 10) {
-        minute = 0${minutes};
-    }
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
 
   temperatureElement.innerHTML = Math.round(temperature);
   cityElement.innerHTML = response.data.city;
@@ -32,6 +33,7 @@ function displayTemp(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = `${currentDay}, ${hour}:${minute}`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" id="weather-app-icon"/>`;
 }
 
 function searchCity(city) {
