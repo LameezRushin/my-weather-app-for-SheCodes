@@ -1,6 +1,9 @@
 function displayTemp(response) {
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = response.data.temperature.current;
+  let temperature = response.data.temperature.current;
+  temperatureElement.innerHTML = Math.round(temperature);
+  let cityElement = document.querySelector("#weather-app-city");
+  cityElement.innerHTML = response.data.city;
 }
 
 function searchCity(city) {
@@ -12,10 +15,10 @@ function searchCity(city) {
 function searchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
-  let cityElement = document.querySelector("#weather-app-city");
-  cityElement.innerHTML = searchInput.value;
   searchCity(searchInput.value);
 }
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
+
+searchCity("Cape Town");
