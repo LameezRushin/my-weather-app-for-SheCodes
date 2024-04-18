@@ -19,24 +19,38 @@ header {
 .search-form-input {
   background-color: rgba(128, 128, 128, 0.2);
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   width: 80%;
   padding: 16px 20px;
   font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search-form-input:hover {
+  background-color: white;
+  color: black;
 }
 
 .search-form-button {
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 14px 18px;
   font-size: 14px;
   font-weight: bold;
   margin: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", sans-serif;
 }
 
 .search-form-button:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: #1e90ff;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 250ms ease-in-out;
 }
 
 main {
