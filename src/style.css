@@ -96,6 +96,20 @@ main {
   padding: 15px 0 0 0;
 }
 
+.weather-forecast {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weather-forecast-temperature {
+  font-size: 14px;
+}
+
 footer {
   border-top: 2px solid rgb(128, 128, 128, 0.2);
   padding: 20px;
