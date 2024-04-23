@@ -1,7 +1,12 @@
 body {
-  background-color: #f9f7fe;
   font-family: "Montserrat", sans-serif;
+  background: radial-gradient(
+    401px at 50.6% -0.3%,
+    rgba(255, 255, 255, 0.31) 1.2%,
+    rgb(36, 212, 219) 100.2%
+  );
 }
+
 .weather-app {
   background-color: white;
   max-width: 600px;
@@ -97,7 +102,7 @@ main {
 }
 
 .weather-forecast {
-  margin-top: 150px;
+  margin-top: 100px;
   text-align: center;
   display: flex;
   justify-content: space-between;
